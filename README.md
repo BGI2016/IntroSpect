@@ -10,19 +10,19 @@ Here, we assume that you have completed a database search of the immunopeptidome
 
 # Running
 1. Convert the database file to search space file
--  The "-File" should be set as the fasta file which you originally used for database search (e.g. uniprot.human.fasta). 
--  The "-minLen" and "-maxLen" shoule be set according to the pMHC feature (e.g. -minLen 8 -maxLen 15). 
--  The "-prefix" should be set according to your requirements (e.g. Human.IntroSpect)
+-  The __'-File'__ should be set as the fasta file which you originally used for database search (e.g. uniprot.human.fasta). 
+-  The __'-minLen'__ and "-maxLen" shoule be set according to the pMHC feature (e.g. -minLen 8 -maxLen 15). 
+-  The __'-prefix'__ should be set according to your requirements (e.g. Human.IntroSpect)
 ```sh
 perl ./DB2SS.pl -file uniprot.human.fasta -minLen 8 -maxLen 15 -prefix Human.IntroSpect -outdir ./SearchSpace
 ```
 -  The results include serveral TXT files (Human.IntroSpect_*mer_filter.txt) and an SS file (Human.IntroSpect.ss). The TXT files contains the peptides splited from your protein database, and the SS file contains the path of these TXT files.
 
 2. Based on your previous database search results, filter the search space files to get a targeted database.
--  The "-ss" should be set as the SS file which you generated in the previous step.
--  The "-pep" should be set as the peptide list file you identified from conventional database search (e.g. hela.txt).
--  The "-GC" should be set as the path of pre-install GibbsCluster.
--  You can view other advanced parameters by using -help.
+-  The __'-ss'__ should be set as the SS file which you generated in the previous step.
+-  The __'-pep'__ should be set as the peptide list file you identified from conventional database search (e.g. hela.txt).
+-  The __'-GC'__ should be set as the path of pre-install GibbsCluster.
+-  You can view other advanced parameters by using __'-help'__.
 ```sh
 perl ./IntroSpect.pl -ss Human.IntroSpect.ss -pep hela.txt -prefix Hela -GC YourGibbsClusterPath/gibbscluster -outdir ./Hela
 cd ./Hela/0.shell/
