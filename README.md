@@ -6,7 +6,7 @@ Please download the file [IntroSpect_v1.0.0.zip](https://github.com/BGI2016/Intr
 -  You will need to install [GibbsCluster-2.0](https://services.healthtech.dtu.dk/service.php?GibbsCluster-2.0) before running IntroSpect.
 
 # Before Running
-Here, we assume that you have completed a database search and identification of the immunopeptidome from a Hela cell line based on one common search tools (e.g. MaxQuant). The name of the protein library you use is __'uniprot.human.fasta'__, and the list of peptides you get is __'hela.txt'__ (This file has a single column of peptide sequences that have been removed the modification information, and no headers are required).
+Here, we assume that you have completed a database search of the immunopeptidome from a Hela cell line based on one common search tools (e.g. MaxQuant). The name of the protein library you use is __'uniprot.human.fasta'__, and the list of peptides you get is __'hela.txt'__ (This file has a single column of peptide sequences that have been removed the modification information, and no headers are required).
 
 # Running
 1. Convert the database file to search space file
