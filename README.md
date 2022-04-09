@@ -14,7 +14,7 @@ Here, we assume that you have completed a database search of the immunopeptidome
 # Running
 1. Convert the database file to search space file
 -  The __'-file'__ should be set as the fasta file which you originally used for database search (e.g. uniprot.human.fasta). 
--  The __'-minLen'__ and "-maxLen" shoule be set according to the pMHC feature (e.g. -minLen 8 -maxLen 15). 
+-  The __'-minLen'__ and __'-maxLen'__ shoule be set according to the pMHC feature (e.g. -minLen 8 -maxLen 15). 
 -  The __'-prefix'__ should be set according to your requirements (e.g. Human.IntroSpect)
 ```sh
 perl ./DB2SS.pl -file uniprot.human.fasta -minLen 8 -maxLen 15 -prefix Human.IntroSpect -outdir ./SearchSpace
